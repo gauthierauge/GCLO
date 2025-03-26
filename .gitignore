@@ -14,7 +14,7 @@
 /lib/
 
 #Docker-Compose
-./docker-compose.yaml
+/docker-compose.yaml
 
 #data sql
-./lesOurs_db.sql
+/lesOurs_db.sql
