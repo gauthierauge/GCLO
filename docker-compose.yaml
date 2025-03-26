@@ -1,0 +1,15 @@
+services:
+  postgres-gclo:
+    image: postgres:15
+    container_name: gclo_postgres
+    environment:
+      POSTGRES_USER: 54j48gyFJt7BFv-user
+      POSTGRES_PASSWORD: t7Fy5B84vJFg4j
+      POSTGRES_DB: gclo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - gclo_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  gclo_postgres_data:

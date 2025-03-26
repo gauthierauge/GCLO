@@ -1,0 +1,20 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java build
+/out/
+/bin/
+*.class
+
+# OS
+.DS_Store
+
+# Lib
+/lib/
+
+#Docker-Compose
+./docker-compose.yaml
+
+#data sql
+./lesOurs_db.sql

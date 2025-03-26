@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="34cba994-a348-482d-a4f9-cc564ea3b15d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<import value="ajp.*"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="codeArticle" class="java.lang.String"/>
+	<field name="colorisArticle" class="java.lang.String"/>
+	<field name="nbArticleTailleUnique" class="java.lang.Integer"/>
+	<field name="nbArticleTailleS" class="java.lang.Integer"/>
+	<field name="nbArticleTailleM" class="java.lang.Integer"/>
+	<field name="nbArticleTailleL" class="java.lang.Integer"/>
+	<field name="nbArticleTailleXL" class="java.lang.Integer"/>
+	<field name="nbArticleTailleXXL" class="java.lang.Integer"/>
+	<field name="prixDeVentehHTArticle" class="java.lang.Float"/>
+	<field name="montantTotalHT" class="java.lang.Float"/>
+	<field name="composition" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="41">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="-1" width="100" height="42" backcolor="#EAEAF7" uuid="24f973f7-84e5-4f95-a981-d5a547d61e69"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ARTICLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="100" y="-1" width="149" height="42" backcolor="#EAEAF7" uuid="bb336edb-1db6-4710-90d5-5e6709973d19"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[COLORIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="249" y="-1" width="180" height="21" backcolor="#EAEAF7" uuid="c1e3db1c-1054-4a1b-980c-1df70202e966"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TAILLE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="249" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="193f750f-ea33-4f5c-bec3-30d8bd40f3e9"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[U]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="309" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="c98858a1-bd5d-40c4-b7ae-4ce11475a1bc"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[M]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="339" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="2cefd6e3-4725-4e12-a4f6-9142603548ca"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[L]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="369" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="8d671042-a7b9-43d0-a5a4-2774f02432b4"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[XL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="399" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="951a7f86-f7f3-4fcb-a164-1b52dc905952"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[XXL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="279" y="20" width="30" height="21" backcolor="#EAEAF7" uuid="4a680857-f5ed-45db-8953-c7e08564d95a"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[S]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="429" y="-1" width="56" height="42" backcolor="#EAEAF7" uuid="239d3824-f16b-4a68-b86f-1c6c375ebcd2"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PRIX]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="485" y="-1" width="70" height="42" backcolor="#EAEAF7" uuid="7219817c-6388-4abc-875c-264c154dfc71"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="40" uuid="2c0fd7a7-8656-4272-b5fe-a832da07450c"/>
+				<box>
+					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codeArticle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="149" height="20" uuid="a8f605e0-7d5d-4d3e-b17a-3aa4620233ba"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{colorisArticle}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="30" height="40" uuid="62b20223-0cab-4055-b214-bf790397fd70"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="0" width="30" height="40" uuid="0563ef9b-27c3-46ac-9be7-a4433682bba8">
+					<printWhenExpression><![CDATA[$F{nbArticleTailleUnique} != 0]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleUnique}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="0" width="30" height="40" uuid="588d79ac-8648-49a2-8b9f-aa9659407625"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="339" y="0" width="30" height="40" uuid="314a5a60-2a33-4c87-b3de-ce12ecfe87e3"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="0" width="30" height="40" uuid="dde0760f-cbb4-4210-ad63-75b36ef9c052"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleXL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="30" height="40" uuid="2ac538b9-dffb-4a31-b587-4dda64527358"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nbArticleTailleXXL}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="429" y="0" width="56" height="40" uuid="d9b8d02d-152b-4970-8b3b-3556af97513c"/>
+				<box rightPadding="5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prixDeVentehHTArticle}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="485" y="0" width="70" height="40" uuid="e813de54-5043-44db-9100-386022f49a91"/>
+				<box rightPadding="5">
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{montantTotalHT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="20" width="149" height="20" uuid="b4ecce47-8e53-47a4-886f-f222e4ff2e90"/>
+				<box>
+					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{composition}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="40" width="555" height="1" uuid="8bb49d6c-253d-47e7-9976-bd17bf770c64"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="20">
+			<staticText>
+				<reportElement x="249" y="0" width="150" height="20" uuid="fb052fe9-6fa0-4b1e-af7a-424c9b836d0a"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nb total de Pièces : ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="19" width="555" height="1" uuid="e3d96aaf-73bb-4efe-a3da-dfca8c489f89"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="0" y="1" width="1" height="19" uuid="675d3142-1af9-4ce8-bc55-4b13e58939c8"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="428" y="1" width="1" height="19" uuid="3da88084-7d1a-467f-a7d5-11a7e24c851e"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+			<line direction="BottomUp">
+				<reportElement x="554" y="1" width="1" height="19" uuid="e74ce00b-b992-4e6a-bed4-ac41fcc98079"/>
+				<graphicElement>
+					<pen lineWidth="0.25"/>
+				</graphicElement>
+			</line>
+		</band>
+	</lastPageFooter>
+</jasperReport>
